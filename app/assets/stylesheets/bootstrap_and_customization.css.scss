@@ -1,5 +1,17 @@
+
+@import url(http://fonts.googleapis.com/css?family=Lemon);
+
 $body-bg:       #2e0807;
+$font-family-sans-serif: 'Lemon', cursive;
+$navbar-height:  45px;
 $navbar-default-bg:#2980b9;
 $navbar-default-link-color:white;
+
 $brand-primary:black;
+
 @import 'bootstrap';
+
+.center {text-align: center;}
+
+
+
