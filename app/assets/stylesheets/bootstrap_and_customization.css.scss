@@ -1,9 +1,8 @@
-
+@import url(http://fonts.googleapis.com/css?family=Cuprum:400,700italic,700,400italic);
 @import url(http://fonts.googleapis.com/css?family=Lemon);
 
-$body-bg:       #2e0807;
+$body-bg:  #2E0807;   
 $font-family-sans-serif: 'Lemon', cursive;
-$navbar-height:  45px;
 $navbar-default-bg:#2980b9;
 $navbar-default-link-color:white;
 
@@ -11,7 +10,10 @@ $brand-primary:black;
 
 @import 'bootstrap';
 
-.center {text-align: center;}
+.center {text-align: center; padding:0px;}
+ * {margin:0px;
+  padding:0px;}
 
+ #h1about{font-family:cuprum;}
 
-
+ .h2about{font-family:cuprum;}
