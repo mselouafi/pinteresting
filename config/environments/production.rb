@@ -77,4 +77,8 @@ Pinteresting::Application.configure do
 
   # Use default logging formatter so that PID and timestamp are not suppressed.
   config.log_formatter = ::Logger::Formatter.new
+
+  # required for heroku
+  # notitie dit moet de uiteindelijke naam hebben iplv localh etc of ffalls etc
+  config.action_mailer.default_url_options = { :host => 'http://fierce-falls-8143.herokuapp.com/' }
 end

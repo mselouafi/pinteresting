@@ -10,7 +10,8 @@
       
       
 
-<div class="lightspot">  
+<div class="lightspot"> 
+
   <%= image_tag "lightspot1140px2.png", :size => "1140x600" %> 
 </div>
 
@@ -20,9 +21,22 @@
 <a style="position:absolute;top:650px;left:55%;color:white;"href="#">link</a>
 
 <hr />
- <p> <%= link_to "sign up", "#", class: "btn btn-primary " %>
- <%= link_to "log in", "#", class: "btn btn-primary " %></p>     
-<hr />
+
+
+<% if user_signed_in? %>
+  # do something
+<% else %>
+   <p>
+
+     
+     <%= link_to "sign up", new_user_registration_path, class: "btn btn-primary " %>
+     <%= link_to "log in", new_user_session_path, class: "btn btn-primary " %>
+
+   </p>
+
+  <%end%> 
+ 
+        <hr />
   <section id="divs">
 
     <div class="d">
@@ -46,9 +60,8 @@
         a<br/>
     </div>
 
-  </section>
+   </section>
  
-
-  
 </body>
+
 </html>
