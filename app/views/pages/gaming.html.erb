@@ -9,10 +9,28 @@
        <p>sign <%= link_to "up", "#", class: "btn btn-primary " %>.</p>
        
       <!-- <%= image_tag "#{}", :size => "300x150" %>-->
-
-     </div>
+      
+     <div class="table">
+       <h4>Calendar</h4>
+       
+        <table border="1">
+          <tr>
+            <% days = %w{sun mon tue wed thu fri sat} %>
+            <% days.each do | day | %>
+                  <td><%= day %></td>
+            <% end %>
+          </tr>
+        </table>
+      </div>
      
-    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    
+     </div>
+
+    <div dir="ltr" style="text-align: left;" trbidi="on">
+      <br /><iframe src="http://www.freeonlinegames.com/embed/38912" width="736" height="850" frameborder="no" scrolling="no"></iframe>
+    </div> 
+     
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) =================-->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 
          <hr />
