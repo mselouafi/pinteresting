@@ -5,7 +5,7 @@
 * {margin:0px;
        padding:0px;
       }
- .home{background-color:#2E0804;
+ .home{
       }
  .about{
 
@@ -163,10 +163,15 @@ html {
     height: 100%;
 }
 
-  #lo{background: url("/assets/st.jpg") no-repeat center center;
-    background-size: cover;
-    background-attachment:fixed;
+  #bg{ background: no-repeat center center;
+  background-size:100%;
+  z-index:-100;
+    position:fixed;
+    top:0;
+    left:0;
+   
      }
+  #bg2{padding-top:0;}
 
 body #lo,
 h1,
@@ -191,9 +196,12 @@ h6 {
     padding-bottom: 50px;
     text-align: center;
     color: #f8f8f8;
-    background: url("/assets/testrails.JPG") no-repeat center center;
+    background: no-repeat center center;
+  //  background:url("/assets/testrails.JPG")  no-repeat center center;
     background-size: cover;
-    border:1px solid #000000;
+    
+
+   // border:1px solid #000000;
 }
 
 .intro-message {
